@@ -123,7 +123,7 @@ fn create_navi() -> NaiveDateTime {
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn excel2csv(_py: Python, m: &PyModule) -> PyResult<()> {
+fn xlsx2csv(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(read_excel, m)?)?;
     Ok(())
 }
